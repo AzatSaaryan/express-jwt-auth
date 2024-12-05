@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header and Main Example</title>
+  </head>
+  <body>
+    <style>
+      /* Сброс стилей */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Стили для body */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f7fc;
+        color: #333;
+      }
+
+      /* Стили для header */
+      .main-header {
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .main-header h1 {
+        font-size: 2em;
+      }
+
+      .main-header nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-top: 10px;
+      }
+
+      .main-header nav ul li {
+        margin: 0 15px;
+      }
+
+      .main-header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .main-header nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* Стили для main */
+      .main-content {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .main-content h2 {
+        margin-bottom: 10px;
+        color: #2c3e50;
+      }
+
+      .main-content p {
+        color: #7f8c8d;
+      }
+    </style>
+    <header class="main-header">
+      <h1>Welcome to My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>Welcome, <%= user.email %></li>
+          <li><a href="/api/books">Books</a></li>
+          <li><a href="/api/logout">Logout</a></li>
+          <li><a href="/api/login">Login</a></li>
+          <li><a href="/api/signup">Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section>
+        <h2>About Us</h2>
+        <p>This is the main content of the website. Feel free to explore!</p>
+      </section>
+    </main>
+  </body>
+</html>

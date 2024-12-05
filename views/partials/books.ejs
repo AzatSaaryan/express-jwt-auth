@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books</title>
+  </head>
+  <body>
+    <style>
+      /* Общие стили */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      /* Стили для заголовка */
+      .main-header {
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .main-header nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .main-header nav ul li {
+        margin: 0 15px;
+      }
+
+      .main-header nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .main-header nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* Стили для списка книг */
+      .book-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        background-color: #f4f7fc;
+      }
+
+      .book-item {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .book-image {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+
+      .book-info h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .book-info p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .btn:hover {
+        background-color: #2980b9;
+      }
+    </style>
+    <header class="main-header">
+      <h1>Our Book Collection</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="book-list">
+      <section class="book-item">
+        <img  alt="Book 1" class="book-image" />
+        <div class="book-info">
+          <h2>The Great Gatsby</h2>
+          <p>Author: F. Scott Fitzgerald</p>
+          <p>Price: $10</p>
+          <button class="btn">More Details</button>
+        </div>
+      </section>
+
+      <section class="book-item">
+        <img  alt="Book 2" class="book-image" />
+        <div class="book-info">
+          <h2>1984</h2>
+          <p>Author: George Orwell</p>
+          <p>Price: $15</p>
+          <button class="btn">More Details</button>
+        </div>
+      </section>
+
+      <section class="book-item">
+        <img  alt="Book 3" class="book-image" />
+        <div class="book-info">
+          <h2>To Kill a Mockingbird</h2>
+          <p>Author: Harper Lee</p>
+          <p>Price: $12</p>
+          <button class="btn">More Details</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
